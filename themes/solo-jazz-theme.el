@@ -1,5 +1,3 @@
->.
-
 ;; This file is not part of emacs.
 
 ;;; Commentary:
