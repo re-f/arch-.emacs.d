@@ -25,11 +25,6 @@
         ("org"          . "https://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
         ("marmalade"    . "https://mirrors.tuna.tsinghua.edu.cn/elpa/marmalade/")))
 
-;; config org-mode
-(global-set-key (kbd "C-c l") 'org-store-link)
-(global-set-key (kbd "C-c a") 'org-agenda)
-(global-set-key (kbd "C-c c") 'org-capture)
-
 ;; 新建标题默认不分割
 (setq org-M-RET-may-split-line '((headline . nil)))
 
@@ -43,3 +38,20 @@
 ;; themes
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 (load-theme 'solo-jazz t)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages '(org-agenda-property modus-themes gruvbox-theme)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+;; load config
+(add-to-list
+    'load-path 
+    (expand-file-name "etc" user-emacs-directory))
