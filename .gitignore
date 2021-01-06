@@ -12,3 +12,7 @@
 
 # repo
 elpa/*
+
+\#*
+
+/auto-save-list
