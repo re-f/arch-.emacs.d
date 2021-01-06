@@ -11,3 +11,4 @@
 
 ;; todo
 (setq org-enforce-todo-dependencies t)
+(provide 'my-org)

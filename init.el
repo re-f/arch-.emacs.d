@@ -54,4 +54,5 @@
 ;; load config
 (add-to-list
     'load-path 
-    (expand-file-name "etc" user-emacs-directory))
+    (expand-file-name "lisp" user-emacs-directory))
+(require 'my-org)   ;; 
